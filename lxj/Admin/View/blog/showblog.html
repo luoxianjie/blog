@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+ </head>
+ <body id="main">
+ 	<div class="map">
+ 	  文章管理&gt;&gt;<strong>查看文章</strong>
+ 	</div>
+ 	<table  border="0" cellspacing="0" >
+ 		<tr><th>编号</th><th>标题</th><th>分类</th><th>浏览次数</th><th>发布时间</th><th>操作</th></tr>
+		<assign name='i' value='1'>
+		<volist name='info' id='vo' >
+		<tr>
+ 			<td>{$i}</td>
+ 			<td>{$vo.title}</td>
+ 			<td>{$vo.cate}</td>
+ 			<td>{$vo.count}</td>
+ 			<td>{$vo.time|date="Y-m-d H:i:s",###}</td>
+ 			<td><a href="{:U('Blog/editBlog',array('id'=>$vo['id']))}">修改</a>|<a onclick="javascript:return confirm('确定删除？')" href="{:U('Blog/deleteBlog',array('id'=>$vo['id']))}">删除</a></td>
+ 		</tr>
+ 		</volist>
+ 	</table>
+ 	<div class="page">{$page}</div>
+ </body>
+ </html>

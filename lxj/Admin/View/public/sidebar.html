@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+  <script src='__ROOT__/public/js/jquery.min.js'></script>
+  <script src='__PUBLIC__/js/basic.js'></script>
+ </head>
+ <body id="sidebar">
+ <if condition="$nav eq 'index'" >
+ <dl>
+ 	<dt>管理首页</dt>
+ 	<dd><a href="{:U('system/config')}" target="main" >系统配置</a></dd>
+ 	<dd><a href="{:U('system/manage')}" target="main" >管理员管理</a></dd>
+ </dl>
+ </if>
+ <if condition="$nav eq 'blog'" >
+  <dl>
+ 	<dt>文章管理</dt>
+ 	<dd><a href="{:U('Blog/addBlog')}" target="main">添加新文章</a></dd>
+ 	<dd><a href="{:U('Blog/showBlog')}" target="main">查看文章列表</a></dd>
+  </dl>
+ </if>
+ <if condition="$nav eq 'cate'" >
+  <dl>
+ 	<dt>分类管理</dt>
+ 	<dd><a href="{:U('Category/addCate')}" target="main">添加新类别</a></dd>
+ 	<dd><a href="{:U('Category/showCate')}" target="main">查看全部类别</a></dd>
+ </dl>
+ </if>
+ <if condition="$nav eq 'talk'" >
+  <dl>
+ 	<dt>说说管理</dt>
+ 	<dd><a href="{:U('Talks/addTalk')}" target="main" >发布说说</a></dd>
+ 	<dd><a href="{:U('Talks/showTalk')}" target="main">查看说说</a></dd>
+ </dl>
+ </if>
+ <if condition="$nav eq 'resource'" >
+ <dl>
+ 	<dt>资源管理</dt>
+ 	<dd><a href="{:U('Resource/addRes')}" target="main">添加新资源</a></dd>
+ 	<dd><a href="{:U('Resource/showRes')}" target="main">查看所有资源</a></dd>
+ </dl>
+ </if>
+ <if condition="$nav eq 'picbox'" >
+ <dl>
+ 	<dt>相册管理</dt>
+ 	<dd><a href="{:U('PicBox/addPicBox')}" target="main">添加新相册</a></dd>
+ 	<dd><a href="{:U('PicBox/showPicBox')}" target="main">查看所有相册</a></dd>
+ </dl>
+ </if>
+ <if condition="$nav eq 'comment'" >
+ <dl>
+ 	<dt>评论管理</dt>
+ 	<dd><a href="{:U('Words/Comment')}" target="main">查看所有评论</a></dd>
+ 	<dd><a href="{:U('Words/Leave')}" target="main">查看所有留言</a></dd>
+ </dl>
+ </if>
+ <if condition="$nav eq 'user'" >
+ <dl>
+ 	<dt>会员管理</dt>
+ 	<dd><a href="{:U('User/addUser')}" target="main">添加新会员</a></dd>
+ 	<dd><a href="{:U('User/showUser')}" target="main">查看所有会员</a></dd>
+ </dl>
+ </if>
+ <if condition="$nav eq 'links'" >
+ <dl>
+ 	<dt>友链管理</dt>
+ 	<dd><a href="{:U('link/showLink')}" target="main">查看友情链接</a></dd>
+ 	<dd><a href="{:U('link/addLink')}" target="main">添加友情链接</a></dd>
+ </dl>
+ </if>
+  </body>
+ </html>

@@ -1,0 +1,471 @@
+@charset=utf-8;
+#main{
+	width:1000px;
+	margin:8px auto;
+}
+#main .left{
+	width:750px;
+}
+#main div.left div.blogs{
+	padding-bottom: 15px;
+}
+#main div.left div.blogs dl{
+	margin:0px auto 10px;
+	width:748px;
+	border:1px solid #ccc;
+}
+#main div.left div.blogs dl dt{
+	font-weight: bold;
+	width:748px;
+	height:30px;
+	line-height: 30px;
+	text-indent: 5px;
+	margin:0px auto;
+	background:#fff;
+}
+#main div.left div.blogs dl dt em.jian{
+	background: url('../images/jian.png') no-repeat;
+	display: inline-block;
+	height:30px;
+	width:30px;
+}
+#main div.left div.blogs dl dd{
+	line-height:20px;
+	padding:5px;
+	margin:10px auto 0;
+	background:#fff;
+}
+#main div.left div.blogs dl dd img{
+	width:320px;
+	height:210px;
+	padding:2px;
+	border:1px dashed #ccc;
+	float: left;
+	margin-right:10px;
+}
+#main div.left div.blogs dl dd.con{
+	line-height: 22px;
+	letter-spacing: 1px;
+}
+#main div.left div.blogs dl dd .left{
+	width:210px;
+}
+
+#main div.left div.blogs dl dd .right{
+	width:240px;
+}
+#main div.left div.blogs dl dd ul li{
+	display: inline-block;
+	border-right: 1px dashed #ccc;
+	padding-right:5px;
+	margin-right: 5px;
+	height:16px;
+	line-height: 16px;
+}
+#main div.left div.blogs dl dd ul li:last-child{
+	border-right: 0;
+}
+#main div.left div.blogs dl dd ul li i.time{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -45px -23px;
+}
+#main div.left div.blogs dl dd ul li i.count{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -72px -120px;
+}
+#main div.left div.blogs dl dd ul li i.comments{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -240px -120px;
+}
+#main div.left div.blogs dl dd ul li i.admin{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -168px -0px;
+}
+#main div.left div.blogs dl dd ul li i.cate{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -360px -48px;
+}
+#main div.left div.blogs dl dd .right ul{
+	text-align: right;
+}
+#main div.left div.guest{
+	width:750px;
+	font-size: 0;
+}
+#main div.left div.guest dl{
+	display: inline-block;
+	width:240px;
+	margin-right: 15px;
+	font-size: 12px;
+	background: #fff;
+	margin-top: 15px;
+	cursor: pointer;
+}
+#main div.left div.guest dl:hover{
+	box-shadow: 2px 2px 2px #ccc;
+}
+#main div.left div.guest dl dt img{
+	width: 240px;
+	height:150px;
+}
+#main div.left div.guest dl dd{
+	height:25px;
+	line-height: 25px;
+	text-indent: 5px;
+}
+#main div.left div.guest dl:nth-child(3n+1){
+	margin-right: 0;
+}
+#main div.left div.comments{
+	width:750px;
+	margin-top: 10px;
+}
+#main div.left div.comments dl{
+	width:750px;
+	background: #fff;
+	margin:10px 0;
+}
+#main div.left div.comments dl dt{
+	height:40px;
+	line-height: 40px;
+	padding:14px 20px 0;
+}
+#main div.left div.comments dl dt.admin{
+	margin-left: 50px;
+	padding-top:7px;
+}
+#main div.left div.comments dl dd:last-child{
+	border:0;
+}
+#main div.left div.comments dl dt img{
+	height:40px;
+	width:40px;
+	border:0;
+	border-radius: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#main div.left div.comments dl dt i{
+	margin-left: 10px;
+}
+#main div.left div.comments dl dt strong{
+	margin-left:20px;
+}
+#main div.left div.comments dl dt i.user{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	vertical-align: middle;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -168px 3px;
+}
+#main div.left div.comments dl dt i.time{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	vertical-align: middle;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -48px -22px;
+}
+#main div.left div.comments dl dt strong{
+	display: inline-block;
+	padding:0 5px;
+	height:18px;
+	line-height: 18px;
+	border-radius: 5px;
+	background: brown;
+	text-align: center;
+	color: #fff;
+}
+#main div.left div.comments dl dd{
+	height:48px;
+	margin:10px 70px;
+	line-height: 48px;
+	border-bottom: 1px dashed #ccc;
+}
+#main div.left div.forms h2{
+	font-size: 14px;
+	font-weight: normal;
+}
+#main div.left div.forms dl{
+	width:308px;
+	padding:20px;
+	border:1px solid #ccc;
+	margin:10px 0;
+	background: #fff;
+	color: #666;
+	display: none;
+}
+#main div.left div.forms dl dd{
+	height:20px;
+	line-height: 20px;
+	padding:0;
+	margin-bottom: 10px;
+	position: relative;
+}
+#main div.left div.forms dl dd.area{
+	height:100px;
+}
+#main div.left div.forms dl dd input{
+	border:1px dashed #ccc;
+	background:none;
+	height:14px;
+	padding:3px;
+}
+#main div.left div.forms dl dd input.name{
+	width:300px;
+}
+#main div.left div.forms dl dd input.btn{
+	width:60px;
+	height:22px;
+	padding:0;
+	border:0;
+	background: #ccc;
+	color:#fff;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+}
+#main div.left div.forms dl dd input.btn:hover{
+	background: brown;
+}
+#main div.left div.forms dl dd textarea{
+	width:300px;
+	height:94px;
+	padding:3px;
+	border:1px dashed #ccc;
+	overflow:auto;
+	resize: none;
+}
+#main div.left div.forms dl dd input.code{
+	width:80px;
+}
+#main div.left div.forms dl dd img{
+	height:21px;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	top: 0px;
+	margin-left: 5px;
+}
+#main div.left div.forms dl dd:last-child{
+	margin-bottom: 0;
+}
+#main .right{
+	width:240px;
+}
+#main div.right div.info img{
+	width:80px;
+	height:80px;
+	margin:10px;
+	margin-right: 0;
+	float:left;
+}
+#main div.right div.info ul{
+	float:left;
+	width:130px;
+	height:80px;
+	margin:10px 0;
+	padding-left:10px;
+	border:1px dashed #ccc;
+}
+#main div.right div.info ul li{
+	height:20px;
+	line-height:20px;
+}
+#main div.right div.info ul li strong{
+	font-style: normal;
+}
+#main div.right div.info p{
+	height:auto;
+	width:220px;
+	margin:0 auto;
+	line-height:20px;
+}
+#main div.right div.recommend ul{
+	width:220px;
+	padding:10px;
+	padding-bottom: 0;
+}
+#main div.right div.recommend ul li{
+	height:24px;
+}
+#main div.right div.recommend ul li em{
+	width:14px;
+	height:14px;
+	display:inline-block;
+	border-radius: 2px;
+	background: brown;
+	text-align: center;
+	color:#fff;
+	vertical-align: middle;
+	margin-right: 5px;
+
+}
+#main div.right div.recommend ul li a{
+	color:#666;
+}
+#main div.right div.recommend ul li a:hover{
+	text-decoration: underline;
+}
+#main div.right div.recommend ul li:nth-child(1) em{
+	background:red;
+}
+#main div.right div.recommend ul li:nth-child(2) em{
+	background: green;
+}
+#main div.right div.recommend ul li:nth-child(3) em{
+	background: orange;
+}
+#main div.right div.later_news dl{
+	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.later_news dl dt{
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	width:60px;
+	color:#fff;
+	border:1px solid #fff;
+	border-radius: 8px;
+	font-size:18px;
+	display: block;
+	float:left;
+	opacity: 0.6;
+}
+#main div.right div.later_news dl dd{
+	margin-left: 10px;
+	display: block;
+	width:145px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	
+}
+#main div.right div.later_news dl dd i:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -336px -22px;
+}
+#main div.right div.later_news dl dd i:last-child{
+	float: right
+}
+#main div.right div.plun dl{
+	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.plun dl dt img{
+	height:40px;
+	width:40px;
+	display: block;
+	border:0;
+}
+#main div.right div.plun dl dt img:hover{
+	opacity: 0.6;
+}
+#main div.right div.plun dl dt{
+	height:40px;
+	width:40px;
+	border:1px solid #fff;
+	border-radius: 20px;
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+#main div.right div.plun dl dd{
+	margin-left: 10px;
+	display: block;
+	width:165px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	
+}
+#main div.right div.plun dl dd i:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -240px -116px;
+}
+#main div.right div.plun dl dd i:last-child{
+	float: right;
+}
+#main div.right div.plun dl dd a:first-child{
+	width:35px;
+	margin-right: 10px;
+	height:16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 2px;
+	opacity: 0.6;
+	display: inline-block;
+	vertical-align: middle;
+	background: brown;
+	color:#fff;
+}
+#main div.right div.links{
+	min-height: 170px;
+}
+#main div.right div.links ul{
+ 	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.links ul li{
+	display: inline-block;
+}
+#main div.right div.links ul li a{
+	width:auto;
+	height:auto;
+	display: inline-block;
+	padding:2px 6px;
+	border-radius:2px;
+	background: #ccc;
+	margin:5px;
+	color:#fff;
+}
+#main div.right div.links h2 em a{
+	color:#666;
+}
+#main div.left .page{
+	margin:10px 0 20px;
+	text-indent: 5px;
+	padding:5px 0;
+	height:20px;
+	line-height: 20px;
+}
+#main div.left .page a{
+	text-indent:0;
+	padding:0 2px;
+	display: inline-block;
+	background: #ccc;
+	margin:0 5px;
+}
+#main div.left .page div.left{
+	width:250px;
+}
+#main div.left .page div.right{
+	width:250px;
+	text-align:right;
+	margin-right: 10px;
+}
+#footer{
+	margin-top: 10px;
+}
+#main div.left div.words{
+	margin-top:0;
+}

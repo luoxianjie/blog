@@ -1,0 +1,289 @@
+@CHARSET "UTF-8";
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	font-size:12px;
+	font-family:"宋体";
+	background:#fff;
+}
+ul{
+	list-style:none;
+}
+#top{
+	background:url(../images/admin_bg.png);
+}
+#sidebar{
+	background:url(../images/admin_bg.png) #f7fbfc repeat-y right;
+}
+#top h1{
+	width:148px;
+	height:80px;
+	/* background:url(../images/logo.png) no-repeat left; */
+	float:left;
+	text-indent:-9999px;
+	font-size:12px;
+	border-right:2px solid #fff;
+}
+#top ul{
+	height:30px;
+	width:600px;
+	float:left;
+	margin-top:48px;
+}
+#top ul li{
+	float:left;
+	height:30px;
+	width:55px;
+	margin-right:5px;
+}
+#top ul li a{
+	display:block;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	width:55px;
+	color:#fff;
+	text-decoration:none;
+	background:url(../images/top_nav1.png);
+}
+#top ul li a:hover{
+	background:url(../images/top_nav2.png);
+	color:red;
+}
+#top ul li a.select{
+	background:url(../images/top_nav2.png);
+}
+#top p{
+	float:right;
+	margin:55px 10px 0 0;
+	font-size:14px;
+	color:#ccc;
+}
+#top p a{
+	color:#fff;
+	text-decoration:none;
+}
+#sidebar dl{
+	
+	padding:20px;
+	text-indent:2px;
+	
+}
+#sidebar dl dt{
+	
+	font-size:14px;
+	font-weight:bold;
+	padding:5px 0;
+	color:#222;
+	border-bottom:1px solid #ccc;
+	margin:5px 0;
+	
+}
+#sidebar dl dd{
+	height:22px;
+	line-height:22px;
+}
+#sidebar dl dd a{
+	color:#333;
+	text-decoration:none;
+}
+#sidebar dl dd a:hover{
+	text-decoration:underline;
+}
+#main div.map{
+	height:22px;
+	width:95%;
+	margin:0 auto;
+	padding:30px 0 10px 0;
+	color:#333;
+}
+#main div.map strong{
+	color:green;
+}
+#main table{
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#main table th,#main table td{
+	height:30px;
+	line-height:30px;
+	color:#333;
+}
+#main table th{
+	background:#eef3f7;
+	border-bottom:#d5dfe8 1px solid;
+	font-weight:normal;
+}
+#main table td{
+	border-bottom:#eee 1px solid;
+}
+
+#main table tr{
+	background:#fff;
+}
+#main table tr:hover{
+	background:#ffffcc;
+}
+#main a{
+	text-decoration:none;
+	color:#3b6ea5;
+}
+#main a:hover{
+	text-decoration:underline;
+}
+#main p.center{
+	text-align:center;
+	padding:0px;
+	height:20px;
+	line-height:20px;
+}
+#main table.update tr td{
+	font-size:12px;
+	text-align:left;
+	color:#666;
+	height:30px;
+	line-height:30px;
+	position:relative;
+}
+#main table.update tr td input.text{
+	width:200px;
+	height:18px;
+	line-height:18px;
+	color:#666;
+	padding:0 5px;	
+	border:1px solid #ccc;
+	display:inline;
+	background:#fff;
+}
+#main table.update tr td input[type=checkbox]{
+	display:inline-block;
+	position:relative;
+	top:2px;
+	margin-right:2px;
+}
+#main table.update tr td input.files{
+	padding:0;
+	margin:0;
+	border:0px;
+	font-size:10px;
+	height:20px;
+	width:180px;
+}
+#main table tr td input.px{
+	width:30px;
+	height:20px;
+	text-align:center;
+}
+#main table tr td input[type=submit]{
+	width:40px;
+	height:20px;
+}
+#main table.update tr td input.submit{
+	margin-left:60px;
+	border:none;
+	width:80px;
+	display:inline-block;
+	position:relative;
+	top:2px;
+	text-align:center;
+	line-height:18px;
+	background:#aaa;
+	cursor:pointer;
+}
+#main table.update tr td input.submit:hover{
+	color:green;
+	background:#ccc;
+}
+#main table.update tr td a{
+	
+	display:inline-block;
+	font-size:12px;
+	height:30px;
+	line-height:30px;
+	padding-left:10px;
+	
+}
+#main table.update tr td textarea{
+	
+	width:200px;
+	height:100px;
+	padding:5px;
+	font-size:12px;
+	overflow:auto;
+}
+#main p.title{
+	height:20px;
+	line-height:20px;
+	width:95%;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+#main p.title a{
+	margin-right:10px;
+	padding:0 5px;
+	margin-left:2px;
+	
+	background:#ffff33;
+	display:inline-block;
+}
+#main p.title a.select{
+	background:#3b6ea5;
+	color:#fff;
+	display:inline-block;
+
+}
+#main div.page{
+	width:95%;
+	margin:10px auto;
+	background:#eef3f7;
+	text-align:center;
+}
+#main div.page a{
+	cursor:pointer;
+	display:inline-block;
+	text-align:center;
+	padding:2px 5px;
+	margin:5px;
+	border:1px solid #666;
+}
+#main div.page a:hover{
+	color:#fff;
+	background:#000;
+}
+#main div.page a.disabled{
+	color:#3b6ea5;
+	cursor:none;
+	text-decoration:none;
+}
+#main div.page a.disabled:hover{
+	background:#fff;
+}
+#main div.page a.currpage{
+	color:#fff;
+	background:#000;
+}
+#main table.update tr td{
+	width:50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

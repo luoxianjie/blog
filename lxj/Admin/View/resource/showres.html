@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+ </head>
+ <body id="main">
+ 	<div class="map">
+ 	  资源管理&gt;&gt;<strong>查看资源</strong>
+ 	</div>
+ 	<table  border="0" cellspacing="0" >
+ 		<tr><th>编号</th><th>资源名称</th><th>资源类型</th><th>资源描述</th><th>下载次数</th><th>操作</th></tr>
+		<assign name='i' value='1'>
+		<volist name='data' id='vo'>
+		<tr>
+ 			<td>{$i}</td>
+ 			<td>{$vo.name}</td>
+ 			<td>
+ 				<if condition="$vo.type eq 0" >视频<elseif condition="$vo.type eq 1"/>软件
+ 				<elseif condition="$vo.type eq 2" />插件<elseif condition="$vo.type eq 3"/>素材
+ 				</if>
+ 			</td>
+ 			<td>{$vo.desc|default="未填写"}</td>
+ 			<td>{$vo.downloads}</td>
+ 			<td><a href="{:U('Resource/editRes',array('id'=>$vo['id']))}">修改</a>|<a onclick="javascript:return confirm('确定删除？')" href="{:U('Resource/deleteRes',array('id'=>$vo['id']))}">删除</a></td>
+ 		</tr>
+ 		</volist>
+ 	</table>
+ 	<div class="page">{$page}</div>
+ </body>
+ </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+  <script src='__ROOT__/public/js/jquery.min.js'></script>
+  <script src='__PUBLIC__/js/basic.js'></script>
+ </head>
+ <body id="top">
+	<h1>LOGO</h1>
+	<ul>
+		<li><a id="nav0"  href="{:U('Public/sidebar',array('side'=>'index'))}" target="sidebar" class="select">首页</a></li>
+		<li><a id="nav1"  href="{:U('Public/sidebar',array('side'=>'blog'))}" target="sidebar">文章</a></li>
+		<li><a id="nav2"  href="{:U('Public/sidebar',array('side'=>'cate'))}" target="sidebar">分类</a></li>
+		<li><a id="nav3"  href="{:U('Public/sidebar',array('side'=>'talk'))}" target="sidebar">说说</a></li>
+		<li><a id="nav4"  href="{:U('Public/sidebar',array('side'=>'resource'))}" target="sidebar">资源</a></li>
+		<li><a id="nav5"  href="{:U('Public/sidebar',array('side'=>'picbox'))}" target="sidebar">相册</a></li>
+		<li><a id="nav6"  href="{:U('Public/sidebar',array('side'=>'comment'))}" target="sidebar">评论</a></li>
+		<li><a id="nav7"  href="{:U('Public/sidebar',array('side'=>'user'))}" target="sidebar">会员</a></li>
+		<li><a id="nav8"  href="{:U('Public/sidebar',array('side'=>'links'))}" target="sidebar">友链</a></li>
+	</ul>
+	<p>
+		您好！<strong>{$user}</strong>，[超级管理员][<a href="{:U('Home/index/index')}" target="_blank">去首页</a>][<a href="{:U('admin/logout')}" target="_parent">退出</a>]
+	</p>
+  </body>
+ </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/basic.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/register.css">
+	<link href="__PUBLIC__/images/logo.ico" rel="shortcut icon" />
+</head>
+<body>
+	<div id='register'>
+		<div class='top'>
+			逆光博客会员注册
+		</div>
+		<div class='middle'>
+			<div class='forms'>
+				<form action="{:U('user/register')}" method='post'>
+					<p><i>&nbsp;</i><input type='text'  placeholder='用户名' name='name' class='text'/></p>
+					<p><i>&nbsp;</i><input type='password' placeholder='密码' name='password' class='text'/></p>
+					<p><i>&nbsp;</i><input type='password' placeholder='确认密码' name='repassword' class='text'/></p>
+					<p><i>&nbsp;</i><input type='text'  placeholder='邮箱' name='email' class='text'/></p>
+					<p><input type='button' onclick="this.form.submit()" class='btn' name="btn" value='注册' /></p>
+				</form>
+			</div>
+		</div>
+		<div class='bottom'>
+			&copy; 2013 - 2015 逆光个人博客 & 保留所有权利
+		</div>
+	</div>	
+</body>
+</html>

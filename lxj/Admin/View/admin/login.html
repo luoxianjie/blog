@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台登陆</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/login.css" />
+  <script src='__ROOT__/public/js/jquery.min.js'></script>
+  <script src='__PUBLIC__/js/basic.js'></script>
+ </head>
+ <body>
+	<div id='login'>
+	<p class="title">逆光博客后台管理系统</p>
+	<form action="{:U('Admin/login')}" name="login" method="post">
+	 <label>用户名：<input class="text" type="text" name="name"/></label>
+	 <label>密　码：<input class="text" type="password" name="passwd"/></label>
+	 <label>验证码：<input class="text code"type="text" name="code"/></label>
+	 <p><img src="{:U('Admin/verify')}"  onclick='changeCode(this,"{:U('Admin/verify')}")'/></p>
+	 <p><input type="submit" value="登录" onclick="return checkLogin()" /><a href="U('admin/remember')">忘记密码?点我</a></p>
+	</form>
+	</div>
+  </body>
+ </html>

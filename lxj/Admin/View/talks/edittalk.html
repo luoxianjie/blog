@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+ </head>
+ <body id="main">
+ 	<div class="map">
+ 	  说说管理&gt;&gt;<strong>修改说说</strong>
+ 	</div>
+ 	<form action="{:U('Talks/editTalk',array('id'=>$data['id']))}" enctype='multipart/form-data' method="post" >
+		<table class='update' border="0" cellspacing="0" >
+		   <tr><td>说说内容：<textarea name='content'>{$data.content}</textarea><span>*必填</span></td></tr>
+		   <tr><td>浏览次数：<input class="text" value="{$data.views}" name="views" type="text"/><span>*选填</span></td></tr>
+		   <tr><td>选择图片：<input name="pics" class='files' type="file"/><span></span></td></tr>
+		   <tr><td><input type="button" onclick="this.form.submit()" class="submit" value="修改说说"/></td></tr>
+		</table>
+  	</form>
+ </body>
+ </html>

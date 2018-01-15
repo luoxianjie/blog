@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+ </head>
+ <body id="main">
+ 	<div class="map">
+ 	  资源管理&gt;&gt;<strong>新增资源</strong>
+ 	</div>
+ 	<form action="{:U('Resource/addRes')}" method="post" >
+		<table class='update' border="0" cellspacing="0" >
+		   <tr><td>资源名称：<input name="name" class="text" type="text"/><span>*必填</span></td></tr>
+		   <tr><td>资源描述：<input class="text" name="desc" type="text"/><span>*选填</span></td></tr>
+		   <tr><td>资源地址：<input name="url" class='text' type="text"/><span>*必填</span></td></tr>
+		   <tr><td>下载次数：<input name="downloads" class='text' type="text"/><span>*选填</span></td></tr>
+		   <tr><td>资源类型：<input name='type' checked='checked' value='0' type="radio">视频　<input name='type' value='1' type="radio">软件　<input name='type' value='2' type="radio">插件　<input name='type' value='3' type="radio">素材　<span></span></td></tr>
+		   <tr><td><input type="button" onclick="this.form.submit()" class="submit" value="新增资源"/></td></tr>
+		</table>
+  	</form>
+ </body>
+ </html>

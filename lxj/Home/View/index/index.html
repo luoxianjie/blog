@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/basic.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css">
+	<link href="__PUBLIC__/images/logo.ico" rel="shortcut icon" />
+</head>
+<body>
+	<include file='Public:header'/>
+	<div id='main'>
+		<div class="left">
+			<div class='box info'>
+				<h2>个人信息</h2>
+				<img src="__PUBLIC__/images/header.jpg"/>
+				<ul>
+					<li>博主姓名：<strong>jack</strong></li>
+					<li>开通时间：<strong>2012-12-22</strong></li>
+					<li>博客类别：<strong>技术交流</strong></li>
+					<li>博文总量：<strong>{$data.blog}</strong></li>
+				</ul>
+				<p>
+					博客简介：本博为技术交流博客，所有博文若无特殊说明均为博主原创，转载请注明出处。
+				</p>
+			</div>
+			<div class='box data'>
+				<h2>数据统计</h2>
+				<ul>
+					<li><i>说说</i> {$data.talk}条</li>
+					<li><i>文章</i> {$data.blog}篇</li>
+					<li><i>留言</i> {$data.word}条</li>
+					<li><i>评论</i> {$data.comment}条</li>
+					<li><i>图片</i> {$data.pic}张</li>
+					<li><i>运行</i> {$data.day}天</li>
+					<li><i>今日</i> {$data.today}</li>
+					<li><i>总计</i> {$data.total}</li>
+				</ul>
+			</div>
+			<div class='box recommend'>
+				<h2>博主推荐</h2>
+				<ul>
+					<li><em>1</em><a href="###">你辽宁都全国垫底了，还有扯淡？</a></li>
+					<li><em>2</em><a href="###">“疏忽”、“疏忽”，聂树斌服”了</a></li>
+					<li><em>3</em><a href="###">整治老人摔倒讹诈，法律利刃</a></li>
+					<li><em>4</em><a href="###">成龙所说的“国”是哪一国？</a></li>
+					<li><em>5</em><a href="###">真诚地向民主派进一言周案之后</a></li>
+					<li><em>6</em><a href="###">你辽宁都全国垫底了，还有扯淡？</a></li>
+					<li><em>7</em><a href="###">“疏忽”、“疏忽”，聂树斌服”了</a></li>
+					<li><em>8</em><a href="###">整治老人摔倒讹诈，法律利刃</a></li>
+				</ul>
+			</div>
+			<div class='box resource'>
+				<h2>资源中心</h2>
+				<ul>
+					<li><em>1</em><a href="###">js</a><i>22</i></li>
+					<li><em>2</em><a href="###">Html</a><i>33</i></li>
+					<li><em>3</em><a href="###">div__PUBLIC__/css</a><i>22</i></li>
+					<li><em>4</em><a href="###">mysql</a><i>44</i></li>
+					<li><em>5</em><a href="###">jquery</a><i>33</i></li>
+					<li><em>6</em><a href="###">bootstrap</a><i>44</i></li>
+					<li><em>7</em><a href="###">easyui</a><i>12</i></li>
+					<li><em>8</em><a href="###">linux</a><i>15</i></li>
+				</ul>
+			</div>
+			<div class='box tags'>
+				<h2>博文标签</h2>
+				<ul>
+					<li><a class='a1' href="###">html</a></li>
+					<li><a class='a2' href="###">divcss</a></li>
+					<li><a class='a3' href="###">js</a></li>
+					<li><a class='a4' href="###">jquery</a></li>
+					<li><a class='a5' href="###">php</a></li>
+					<li><a class='a1' href="###">mysql</a></li>
+					<li><a class='a2' href="###">linux</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class='center'>
+			<div class="box news">
+				<h2>最新动态</h2>
+				<div class='news_top'>
+					<div class='left'>
+						<img src='__PUBLIC__/images/header.jpg'/>
+						<p><strong>逆光</strong><br/>10月21日 19:31 来自小米3 浏览（123）<p>
+					</div>
+					<div class='right'>
+						<a href='###'>&nbsp;</a>
+					</div>
+				</div>
+				<div class='news_content'>
+					决定和去做是两回事，想到和做到是两回事，执行力真的很重要。
+				</div>
+				<div class='forms'>
+					<div class='zan'>
+						<strong>&nbsp;</strong>
+						<i>逆光</i>
+						觉得很赞
+					</div>
+					<form action='' method='post' >
+						<input class='text' type='text' name='comment'  />
+						<input class='button' name='send' onclick='this.form.submit()'value='发表'type='button' />
+					</form>
+				</div>
+			</div>
+			<div class='box blogs'>
+				<h2>最新博文</h2>
+				<dl>
+					<dt><em class='right jian' >&nbsp;</em><a href='###'>工行信用卡意外办下来了</a></dt>
+					<dd><a href='###'>之前写过一篇文章《工行信用卡真难办》，因为申请的时候刚好赶上过年，所以拖了很久，申请大约过了半个月收到95588的信息：感谢您申请工商银行信用卡，我行已收到您的信用卡申请资料，即将进行审核，请耐心等待，我行将尽快为您处理。工银信用卡【工商银行】过了两天又收到一条信息：尊敬的客户：您好！您申请的工行信用卡未能成功申办。我 ... </a></dd>
+					<dd>
+						<div class='left'>
+							<ul>
+								<li>
+									<i class='time' >&nbsp;</i>
+									<a>2015-12-24 19:23</a>
+								</li>
+								<li>
+									<i class='count'>&nbsp;</i>
+									<a>124</a>
+								</li>
+							</ul>
+						</div>
+						<div class='right'>
+							<ul>
+								<li>
+									<i class='comments'>&nbsp;</i>
+									<a>6条评论</a>
+								</li>
+								<li>
+									<i class='admin'>&nbsp;</i>
+									<a>逆光</a>
+								</li>
+								<li>
+									<i class='cate'>&nbsp;</i>
+									<a>HTML</a>
+								</li>
+							</ul>
+						</div>
+						<div class='clear'></div>
+					</dd>
+				</dl>
+				<dl>
+					<dt><em class='right jian' >&nbsp;</em><a href='###'>工行信用卡意外办下来了</a></dt>
+					<dd><a href='###'>之前写过一篇文章《工行信用卡真难办》，因为申请的时候刚好赶上过年，所以拖了很久，申请大约过了半个月收到95588的信息：感谢您申请工商银行信用卡，我行已收到您的信用卡申请资料，即将进行审核，请耐心等待，我行将尽快为您处理。工银信用卡【工商银行】过了两天又收到一条信息：尊敬的客户：您好！您申请的工行信用卡未能成功申办。我 ... </a></dd>
+					<dd>
+						<div class='left'>
+							<ul>
+								<li>
+									<i class='time' >&nbsp;</i>
+									<a>2015-12-24 19:23</a>
+								</li>
+								<li>
+									<i class='count'>&nbsp;</i>
+									<a>124</a>
+								</li>
+							</ul>
+						</div>
+						<div class='right'>
+							<ul>
+								<li>
+									<i class='comments'>&nbsp;</i>
+									<a>6条评论</a>
+								</li>
+								<li>
+									<i class='admin'>&nbsp;</i>
+									<a>逆光</a>
+								</li>
+								<li>
+									<i class='cate'>&nbsp;</i>
+									<a>HTML</a>
+								</li>
+							</ul>
+						</div>
+						<div class='clear'></div>
+					</dd>
+				</dl>
+				<dl>
+					<dt><em class='right jian' >&nbsp;</em><a href='###'>工行信用卡意外办下来了</a></dt>
+					<dd><a href='###'>之前写过一篇文章《工行信用卡真难办》，因为申请的时候刚好赶上过年，所以拖了很久，申请大约过了半个月收到95588的信息：感谢您申请工商银行信用卡，我行已收到您的信用卡申请资料，即将进行审核，请耐心等待，我行将尽快为您处理。工银信用卡【工商银行】过了两天又收到一条信息：尊敬的客户：您好！您申请的工行信用卡未能成功申办。我 ... </a></dd>
+					<dd>
+						<div class='left'>
+							<ul>
+								<li>
+									<i class='time' >&nbsp;</i>
+									<a>2015-12-24 19:23</a>
+								</li>
+								<li>
+									<i class='count'>&nbsp;</i>
+									<a>124</a>
+								</li>
+							</ul>
+						</div>
+						<div class='right'>
+							<ul>
+								<li>
+									<i class='comments'>&nbsp;</i>
+									<a>6条评论</a>
+								</li>
+								<li>
+									<i class='admin'>&nbsp;</i>
+									<a>逆光</a>
+								</li>
+								<li>
+									<i class='cate'>&nbsp;</i>
+									<a>HTML</a>
+								</li>
+							</ul>
+						</div>
+						<div class='clear'></div>
+					</dd>
+				</dl><dl>
+					<dt><em class='right jian' >&nbsp;</em><a href='###'>工行信用卡意外办下来了</a></dt>
+					<dd><a href='###'>之前写过一篇文章《工行信用卡真难办》，因为申请的时候刚好赶上过年，所以拖了很久，申请大约过了半个月收到95588的信息：感谢您申请工商银行信用卡，我行已收到您的信用卡申请资料，即将进行审核，请耐心等待，我行将尽快为您处理。工银信用卡【工商银行】过了两天又收到一条信息：尊敬的客户：您好！您申请的工行信用卡未能成功申办。我 ... </a></dd>
+					<dd>
+						<div class='left'>
+							<ul>
+								<li>
+									<i class='time' >&nbsp;</i>
+									<a>2015-12-24 19:23</a>
+								</li>
+								<li>
+									<i class='count'>&nbsp;</i>
+									<a>124</a>
+								</li>
+							</ul>
+						</div>
+						<div class='right'>
+							<ul>
+								<li>
+									<i class='comments'>&nbsp;</i>
+									<a>6条评论</a>
+								</li>
+								<li>
+									<i class='admin'>&nbsp;</i>
+									<a>逆光</a>
+								</li>
+								<li>
+									<i class='cate'>&nbsp;</i>
+									<a>HTML</a>
+								</li>
+							</ul>
+						</div>
+						<div class='clear'></div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class='right'>
+			<div class="box calendar" >
+				<h2>日历</h2>
+				<p>
+					<a class='prev_month' >&nbsp;</a>
+					<a class='next_month' >&nbsp;</a>
+					<a class='date'>2015年12月24日</a>
+				</p>
+				<table border='0' cellpadding="0" cellspacing="1">
+					<tr>
+						<th>日</th><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th>
+					</tr>
+					<tr>
+						<td>&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+					</tr>
+					<tr>
+						<td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+					</tr>
+					<tr>
+						<td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+					</tr>
+					<tr>
+						<td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+					</tr>
+					<tr>
+						<td>28</td><td>29</td><td>30</td><td>31</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+			<div class='box member' >
+				<h2>最近访客</h2>
+				<ul>
+					<li><img src='__PUBLIC__/images/tourist1.jpg' /><p><a>逆光</a><br/>2015-12-24</p></li>
+					<li><img src='__PUBLIC__/images/tourist2.jpg' /><p><a>逆光</a><br/>2015-12-24</p></li>
+					<li><img src='__PUBLIC__/images/tourist3.jpg' /><p><a>逆光</a><br/>2015-12-24</p></li>
+					<li><img src='__PUBLIC__/images/tourist4.jpg' /><p><a>逆光</a><br/>2015-12-24</p></li>
+					<li><img src='__PUBLIC__/images/tourist5.jpg' /><p><a>逆光</a><br/>2015-12-24</p></li>
+					<li><img src='__PUBLIC__/images/tourist6.jpg' /><p><a>逆光</a><br/>2015-12-24</p></li>
+				</ul>
+			</div>
+			<div class='box later_news'>
+				<h2>相关动态</h2>
+				<dl>
+					<dt class='a1'>8.12</dt>
+					<dd><i>&nbsp;</i><i>逆光</i><i>Win7</i></dd>
+					<dd><a href="###">很久没有做过什么粗活</a></dd>
+				</dl>
+				<div class='clear'></div>
+				<dl>
+					<dt class='a2'>8.12</dt>
+					<dd><i>&nbsp;</i><i>逆光</i><i>Win7</i></dd>
+					<dd><a href="###">很久没有做过什么粗活</a></dd>
+				</dl>
+				<div class='clear'></div>
+				<dl>
+					<dt class='a3'>8.12</dt>
+					<dd><i>&nbsp;</i><i>逆光</i><i>Win7</i></dd>
+					<dd><a href="###">很久没有做过什么粗活</a></dd>
+				</dl>
+				<div class='clear'></div>
+			</div>
+			<div class='box plun'>
+				<h2>博友评论</h2>
+				<dl>
+					<dt><img src='__PUBLIC__/images/tourist2.jpg'/></dt>
+					<dd><i>&nbsp;</i><i>逆光</i><i>Win7</i></dd>
+					<dd><a href='###'>文章</a><a href='###'>谢谢分享</a></dd>
+				</dl>
+				<div class='clear'></div>
+				<dl>
+					<dt><img src='__PUBLIC__/images/tourist1.jpg'/></dt>
+					<dd><i>&nbsp;</i><i>逆光</i><i>Win7</i></dd>
+					<dd><a href='###'>文章</a><a href='###'>谢谢分享</a></dd>
+				</dl>
+				<div class='clear'></div>
+				<dl>
+					<dt><img src='__PUBLIC__/images/tourist3.jpg'/></dt>
+					<dd><i>&nbsp;</i><i>逆光</i><i>Win7</i></dd>
+					<dd><a href='###'>文章</a><a href='###'>谢谢分享</a></dd>
+				</dl>
+				<div class='clear'></div>
+			</div>
+			<div class='box links'>
+				<h2><em><a href='###'>申请链接</a></em>友情链接</h2>
+				<ul>
+					<li><a href='###'>百度</a></li>
+					<li><a href='###'>谷歌</a></li>
+					<li><a href='###'>好123</a></li>
+					<li><a href='###'>雅虎中国</a></li>
+					<li><a href='###'>51cto</a></li>
+					<li><a href='###'>后盾网</a></li>
+					<li><a href='###'>瓢城web俱乐部</a></li>
+					<li><a href='###'>php100</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	<div class='clear'></div>
+	<include file='Public:footer' />
+</body>
+</html>

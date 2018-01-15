@@ -1,0 +1,309 @@
+@charset=utf-8;
+#main{
+	width:1000px;
+	margin:8px auto;
+}
+#main .left{
+	width:750px;
+}
+#main div.left div.blogs{
+	padding-bottom: 15px;
+}
+#main div.left div.blogs dl{
+	margin:10px auto;
+	width:730px;
+	border:1px solid #fff;
+}
+#main div.left div.blogs dl dt{
+	font-weight: bold;
+	width:730px;
+	height:30px;
+	line-height: 30px;
+	text-indent: 5px;
+	margin:0px auto;
+	background:#fff;
+}
+#main div.left div.blogs dl dt em.jian{
+	background: url('../images/jian.png') no-repeat;
+	display: inline-block;
+	height:30px;
+	width:30px;
+}
+#main div.left div.blogs dl dd{
+	width:720px;
+	line-height:20px;
+	padding:5px;
+	margin:10px auto 0;
+	background:#fff;
+}
+#main div.left div.blogs dl dd img{
+	width:150px;
+	height:120px;
+	display: block;
+	float:left;
+	padding:2px;
+	border:1px dashed #ccc;
+}
+#main div.left div.blogs dl dd a.con{
+	display:block;
+	float:left;
+	margin-left:10px;
+	width:540px;
+	padding:5px;
+	height:115px;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+#main div.left div.blogs dl dd .left{
+	width:210px;
+}
+
+#main div.left div.blogs dl dd .right{
+	width:240px;
+}
+#main div.left div.blogs dl dd ul li{
+	display: inline-block;
+	border-right: 1px dashed #ccc;
+	padding-right:5px;
+	margin-right: 5px;
+	height:16px;
+	line-height: 16px;
+}
+#main div.left div.blogs dl dd ul li:last-child{
+	border-right: 0;
+}
+#main div.left div.blogs dl dd ul li i.time{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -45px -23px;
+}
+#main div.left div.blogs dl dd ul li i.count{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -72px -120px;
+}
+#main div.left div.blogs dl dd ul li i.comments{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -240px -120px;
+}
+#main div.left div.blogs dl dd ul li i.admin{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -168px -0px;
+}
+#main div.left div.blogs dl dd ul li i.cate{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -360px -48px;
+}
+#main div.left div.blogs dl dd .right ul{
+	text-align: right;
+}
+#main .right{
+	width:240px;
+}
+#main div.right div.info img{
+	width:80px;
+	height:80px;
+	margin:10px;
+	margin-right: 0;
+	float:left;
+}
+#main div.right div.info ul{
+	float:left;
+	width:130px;
+	height:80px;
+	margin:10px 0;
+	padding-left:10px;
+	border:1px dashed #ccc;
+}
+#main div.right div.info ul li{
+	height:20px;
+	line-height:20px;
+}
+#main div.right div.info ul li strong{
+	font-style: normal;
+}
+#main div.right div.info p{
+	height:auto;
+	width:220px;
+	margin:0 auto;
+	line-height:20px;
+}
+#main div.right div.recommend ul{
+	width:220px;
+	padding:10px;
+	padding-bottom: 0;
+}
+#main div.right div.recommend ul li{
+	height:24px;
+}
+#main div.right div.recommend ul li em{
+	width:14px;
+	height:14px;
+	display:inline-block;
+	border-radius: 2px;
+	background: brown;
+	text-align: center;
+	color:#fff;
+	vertical-align: middle;
+	margin-right: 5px;
+
+}
+#main div.right div.recommend ul li a{
+	color:#666;
+}
+#main div.right div.recommend ul li a:hover{
+	text-decoration: underline;
+}
+#main div.right div.recommend ul li:nth-child(1) em{
+	background:red;
+}
+#main div.right div.recommend ul li:nth-child(2) em{
+	background: green;
+}
+#main div.right div.recommend ul li:nth-child(3) em{
+	background: orange;
+}
+#main div.right div.later_news dl{
+	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.later_news dl dt{
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	width:60px;
+	color:#fff;
+	border:1px solid #fff;
+	border-radius: 8px;
+	font-size:18px;
+	display: block;
+	float:left;
+	opacity: 0.6;
+}
+#main div.right div.later_news dl dd{
+	margin-left: 10px;
+	display: block;
+	width:145px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	
+}
+#main div.right div.later_news dl dd i:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -336px -22px;
+}
+#main div.right div.later_news dl dd i:last-child{
+	float: right
+}
+#main div.right div.plun dl{
+	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.plun dl dt img{
+	height:40px;
+	width:40px;
+	display: block;
+	border:0;
+}
+#main div.right div.plun dl dt img:hover{
+	opacity: 0.6;
+}
+#main div.right div.plun dl dt{
+	height:40px;
+	width:40px;
+	border:1px solid #fff;
+	border-radius: 20px;
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+#main div.right div.plun dl dd{
+	margin-left: 10px;
+	display: block;
+	width:165px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	
+}
+#main div.right div.plun dl dd i:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -240px -116px;
+}
+#main div.right div.plun dl dd i:last-child{
+	float: right;
+}
+#main div.right div.plun dl dd a:first-child{
+	width:35px;
+	margin-right: 10px;
+	height:16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 2px;
+	opacity: 0.6;
+	display: inline-block;
+	vertical-align: middle;
+	background: brown;
+	color:#fff;
+}
+#main div.right div.links{
+	min-height: 170px;
+}
+#main div.right div.links ul{
+ 	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.links ul li{
+	display: inline-block;
+}
+#main div.right div.links ul li a{
+	width:auto;
+	height:auto;
+	display: inline-block;
+	padding:2px 6px;
+	border-radius:2px;
+	background: #ccc;
+	margin:5px;
+	color:#fff;
+}
+#main div.right div.links h2 em a{
+	color:#666;
+}
+#main div.left .page{
+	margin:10px 0 20px;
+	text-indent: 5px;
+	padding:5px 0;
+	height:20px;
+	line-height: 20px;
+}
+#main div.left .page a{
+	text-indent:0;
+	padding:0 2px;
+	display: inline-block;
+	background: #ccc;
+	margin:0 5px;
+}
+#main div.left .page div.left{
+	width:250px;
+}
+#main div.left .page div.right{
+	width:250px;
+	text-align:right;
+	margin-right: 10px;
+}

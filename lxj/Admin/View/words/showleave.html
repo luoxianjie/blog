@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+ </head>
+ <body id="main">
+ 	<div class="map">
+ 	  留言管理&gt;&gt;<strong>查看留言</strong>
+ 	</div>
+	<input type='hidden' name='id' value='{$data.id}'/>
+	<table class='update' border="0" cellspacing="0" >
+	   <tr><td>网友昵称：<input name="name" readonly="readonly" value="{$data.name}" class="text" type="text"/><span></span></td></tr>
+	   <tr><td>留言时间：<input class="text" readonly="readonly" name="url" value="{$data.time|date='Y-m-d H:i:s',###}" type="text"/><span></span></td></tr>
+	   <tr><td>是否回复：<input name="email" readonly="readonly" class="text" <if condition='$data.is_callback eq 0'>value='否'<else/>value='是'</if> type="text"/><span></span></td></tr>
+	   <tr><td>留言内容：<textarea readonly="readonly" >{$data.content}</textarea><span></span></td></tr>
+	   <if condition='$data.is_callback eq 1'>
+		  	<tr><td>回复内容：<textarea readonly="readonly" >{$data.callback}</textarea><span></span></td></tr>
+	   </if>
+	</table>
+	
+ </body>
+ </html>

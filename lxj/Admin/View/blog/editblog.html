@@ -1,0 +1,48 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+  <script type="text/javascript" src="__ROOT__/public/ckeditor/ckeditor.js"></script>
+  <script type="text/javascript" src="__ROOT__/public/js/jquery.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__js/basic.js"></script>
+  <script>
+     uploaddir="{:U('Public/upload')}";
+  </script>
+ </head>
+ <body id="main">
+ 	<div class="map">
+ 	  文章管理&gt;&gt;<strong>修改文章</strong>
+ 	</div>
+    <form action="{:U('Blog/editblog',array('id'=>$data['id']))}"  method="post" name="con">
+    <table class="update blog">
+    <tr><td>文档标题：<input type="text" value='{$data.title}' class="text" name="title"/></td><td>分　　类：<select name="cate">
+    	<option >请选择一个栏目类别</option>
+    	{$data.cate}
+    </select>
+    </td></tr>
+    <tr><td>定义属性：<input type="checkbox" name="attr[]" <if condition='$data.front eq 1'>checked="checked"</if> value="front" />头条
+    			   <input type="checkbox" name="attr[]" <if condition='$data.recomment eq 1'>checked="checked"</if> value="recomment" />推荐
+    </td><td>Tag&nbsp;标签：<input type="text" value='{$data.tag}' class="text" name="tag"/></td></tr>
+    <tr><td>关 键 字：<input type="text" class="text" value='{$data.keyword}' name="keyword"/></td><td>微 缩 图：<input type="text" id="tb" value="{$data.pic}" class="text" readonly="readonly" name="pic"/>&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="submit" id="upload_thumbnail" value="上传缩略图" /><br/><img id="pic" src="" style="display:none;margin-left:60px;height:200px;"/></td></tr>
+    <tr><td>文章来源：<input type="text" class="text" value='{$data.source}' name="source"/></td><td>作&nbsp;&nbsp;&nbsp;&nbsp;者：<input type="text" value="{$data.author}" class="text" name="author"/></td></tr>
+    <tr><td>内容摘要：<textarea name="info">{$data.info}</textarea></td><td>评论选项：<input type="radio" <if condition="$data.comment eq 1">checked="checked"</if> value="1" name="comment"/>允许评论
+    <input type="radio" <if condition="$data.comment eq 0">checked="checked"</if> value="0" name="comment"/>禁止评论&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </td></tr>
+        <tr><td>浏览次数：<input type="text" name="count" value="{$data.count}" class="text small"/></td></tr>
+    <tr><td colspan='2'><textarea name="content" id="content"  >{$data.content}</textarea>
+    		<script>
+                CKEDITOR.replace( 'content' );
+            </script>
+    </td></tr>
+    <tr><td><input type="button" style="margin-left:0;" class="submit" onclick="javascipt:this.form.submit()"value="修改文档" /></td><td><input type="reset" class="submit" value="重置" /></td></tr>
+    <tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>
+    <tr><td>&nbsp;&nbsp;</td><td>&nbsp;&nbsp;</td></tr>
+    </table>
+    </form>
+ </body>
+ </html>

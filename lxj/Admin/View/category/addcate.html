@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+ </head>
+ <body id="main">
+ 	<div class="map">
+ 	  分类管理&gt;&gt;<strong>新增分类</strong>
+ 	</div>
+ 	<form action="{:U('Category/addCate')}" method="post" >
+		<table class='update' border="0" cellspacing="0" >
+		   <tr><td>分类名称：<input name="name" class="text" type="text"/><span>*必填</span></td></tr>
+		   <tr><td><input type="button" onclick="this.form.submit()" class="submit" value="新增分类"/></td></tr>
+		</table>
+  	</form>
+ </body>
+ </html>

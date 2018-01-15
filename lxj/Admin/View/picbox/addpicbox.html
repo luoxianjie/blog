@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+ </head>
+ <body id="main">
+ 	<div class="map">
+ 	  相册管理&gt;&gt;<strong>新增相册</strong>
+ 	</div>
+ 	<form action="{:U('PicBox/addpicbox')}" enctype='multipart/form-data' method="post" >
+		<table class='update' border="0" cellspacing="0" >
+		   <tr><td>相册名称：<input name="name" class="text" type="text"/><span>*必填</span></td></tr>
+		   <tr><td>相册描述：<input class="text" name="desc" type="text"/><span>*选填</span></td></tr>
+		   <tr><td>相册封面：<input name="cover" class='files' type="file"/><span></span></td></tr>
+		   <tr><td>是否加密：<input name='encrypt' checked='checked' value='0' type="radio">否　<input name='encrypt' value='1' type="radio">是<span></span></td></tr>
+		   <tr><td><input type="button" onclick="this.form.submit()" class="submit" value="新增相册"/></td></tr>
+		</table>
+  	</form>
+ </body>
+ </html>

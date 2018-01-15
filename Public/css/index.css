@@ -1,0 +1,529 @@
+@charset=utf-8;
+#main{
+	width:1000px;
+	margin:8px auto;
+}
+#main .left{
+	width:240px;
+}
+#main .right{
+	width:240px;
+}
+#main .center{
+	float:left;
+	width:500px;
+	margin-left:10px;
+
+}
+
+#main div.rigth div.calendar table{
+	width: 100%;
+}
+#main div.left div.info img{
+	width:80px;
+	height:82px;
+	margin:10px;
+	margin-right: 0;
+	float:left;
+}
+#main div.left div.info ul{
+	float:left;
+	width:130px;
+	height:80px;
+	margin:10px 0;
+	padding-left:10px;
+	border:1px dashed #ccc;
+	border-left:none;
+}
+#main div.left div.info ul li{
+	height:20px;
+	line-height:20px;
+}
+#main div.left div.info ul li strong{
+	font-style: normal;
+}
+#main div.left div.info p{
+	height:auto;
+	width:220px;
+	margin:0 auto;
+	line-height:20px;
+}
+#main div.left div.data ul {
+	width:220px;
+	padding:10px 10px 0;
+	text-align: center;
+}
+#main div.left div.data ul li{
+	text-align: left;
+	width:100px;
+	display:inline-block;
+	height:30px;
+	line-height: 30px;
+	font-weight: bold;
+}
+#main div.left div.data ul li i{
+	display:inline-block;
+	width:40px;
+	height:18px;
+	line-height: 18px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 4px;
+	background: #fff;
+	font-size:12px;
+	color:#666;
+	margin-right: 10px;
+	font-weight: normal;
+	font-style: normal;
+}
+#main div.left div.tags{
+	min-height: 162px;
+}
+#main div.left div.tags ul{
+ 	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.left div.tags ul li{
+	display: inline-block;
+}
+#main div.left div.tags ul li a{
+	width:auto;
+	height:auto;
+	display: inline-block;
+	padding:2px 6px;
+	border-radius:8px 0;
+	margin:5px;
+	color:#fff;
+}
+#main div.left div.recommend ul{
+	width:220px;
+	padding:10px;
+	padding-bottom: 0;
+}
+#main div.left div.recommend ul li{
+	height:24px;
+}
+#main div.left div.recommend ul li em{
+	width:14px;
+	height:14px;
+	display:inline-block;
+	border-radius: 2px;
+	background: brown;
+	text-align: center;
+	color:#fff;
+	vertical-align: middle;
+	margin-right: 5px;
+
+}
+#main div.left div.recommend ul li a{
+	color:#666;
+}
+#main div.left div.recommend ul li a:hover{
+	text-decoration: underline;
+}
+#main div.left div.recommend ul li:nth-child(1) em{
+	background:red;
+}
+#main div.left div.recommend ul li:nth-child(2) em{
+	background: green;
+}
+#main div.left div.recommend ul li:nth-child(3) em{
+	background: orange;
+}
+#main div.left div.resource ul{
+	width:220px;
+	padding:10px;
+	padding-bottom: 0;
+}
+#main div.left div.resource ul li{
+	height:24px;
+}
+#main div.left div.resource ul li em{
+	width:14px;
+	height:14px;
+	display:inline-block;
+	border-radius: 2px;
+	background: brown;
+	text-align: center;
+	color:#fff;
+	vertical-align: middle;
+	margin-right: 5px;
+
+}
+#main div.left div.resource ul li a{
+	color:#666;
+}
+#main div.left div.resource ul li a:hover{
+	text-decoration: underline;
+}
+#main div.left div.resource ul li i{
+	float:right;
+}
+#main div.left div.resource ul li:nth-child(1) em{
+	background:red;
+}
+#main div.left div.resource ul li:nth-child(2) em{
+	background: green;
+}
+#main div.left div.resource ul li:nth-child(3) em{
+	background: orange;
+}
+#main div.center div.news{
+	padding-bottom: 0;
+}
+#main div.center div.news .news_top{
+	width:480px;
+	height:50px;
+	padding:10px;	
+}
+#main div.center div.news .news_top .left{
+	width:400px;
+}
+#main div.center div.news .news_top .left img{
+	display:block;
+	width:50px;
+	height:50px;
+	float:left;
+}
+#main div.center div.news .news_top .left p{
+	float:left;
+	margin-top:4px;
+	line-height:24px;
+	padding-left:10px;
+}
+#main div.center div.news .news_top .right{
+	text-align:right;
+	width:40px;
+}
+#main div.center div.news .news_top .right a{
+	width:30px;
+	height:16px;
+	display: block;
+	background: url(../images/glyphicons-halflings.png) no-repeat -88px -144px;
+	border:1px solid #ccc;
+	border-radius: 8px;
+	margin-top: 35px;
+	text-decoration: none;
+}
+#main div.center div.news .news_top .right a:hover{
+	background: url(../images/glyphicons-halflings2.png) no-repeat -88px -144px;
+}
+#main div.center div.news .news_content{
+	width: 480px;
+	padding:10px;
+	font-weight:bold;
+}
+#main div.center div.news .zan{
+	height:20px;
+	width:480px;
+}
+#main div.center div.news .zan strong{
+	display: inline-block;
+	vertical-align: middle;
+	width:20px;
+	height:20px;
+	background:url(../images/glyphicons-halflings2.png)  no-repeat -92px -142px;
+}
+#main div.center div.news .zan i{
+	display: inline-block;
+	color:brown;
+	font-style: normal;
+}
+#main div.center div.news .forms{
+	height: 70px;
+	width:480px;
+	padding:10px;
+	background:#fff;
+}
+#main div.center div.news .forms form{
+	margin-top:10px;
+}
+#main div.center div.news .forms input.text{
+	height:18px;
+	width:380px;
+	padding:5px;
+	border:1px solid #ccc;
+	float:left;
+}
+#main div.center div.news .forms input.button{
+	cursor:pointer;
+	width:80px;
+	height:30px;
+	background:#ccc;
+	border:1px solid #ccc;
+	float:right;
+}
+#main div.center div.news .forms input.button:hover{
+	background:brown;
+	color:#fff;
+}
+#main div.center div.blogs{
+	padding-bottom: 15px;
+}
+#main div.center div.blogs dl{
+	margin:10px auto;
+	width:480px;
+	border:1px solid #fff;
+}
+#main div.center div.blogs dl dt{
+	font-weight: bold;
+	width:480px;
+	height:30px;
+	line-height: 30px;
+	text-indent: 5px;
+	margin:0px auto;
+	background:#fff;
+}
+#main div.center div.blogs dl dt em.jian{
+	background: url('../images/jian.png') no-repeat;
+	display: inline-block;
+	height:30px;
+	width:30px;
+}
+#main div.center div.blogs dl dd{
+	width:470px;
+	line-height:20px;
+	padding:5px;
+	margin:10px auto 0;
+	background:#fff;
+}
+#main div.center div.blogs dl dd .left{
+	width:210px;
+}
+
+#main div.center div.blogs dl dd .right{
+	width:240px;
+}
+#main div.center div.blogs dl dd ul li{
+	display: inline-block;
+	border-right: 1px dashed #ccc;
+	padding-right:10px;
+	margin-right: 10px;
+	height:16px;
+	line-height: 16px;
+}
+#main div.center div.blogs dl dd ul li:last-child{
+	border-right: 0;
+}
+#main div.center div.blogs dl dd ul li i.time{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -45px -23px;
+}
+#main div.center div.blogs dl dd ul li i.count{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -72px -120px;
+}
+#main div.center div.blogs dl dd ul li i.comments{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -240px -120px;
+}
+#main div.center div.blogs dl dd ul li i.admin{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -168px -0px;
+}
+#main div.center div.blogs dl dd ul li i.cate{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -360px -48px;
+}
+#main div.center div.blogs dl dd .right ul{
+	text-align: right;
+}
+#main div.right div.calendar p{
+	height:25px;
+	line-height: 25px;
+}
+#main div.right div.calendar p a{
+	text-decoration: none;
+}
+#main div.right div.calendar p a.prev_month{
+	width:20px;
+	height: 20px;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+	margin-left:10px;
+	background: url(../images/glyphicons-halflings.png) no-repeat -192px -70px;
+}
+#main div.right div.calendar p a.prev_month:hover{
+	background: url(../images/glyphicons-halflings2.png) no-repeat -192px -70px;
+}
+#main div.right div.calendar p a.next_month{
+	width:20px;
+	height: 20px;
+	cursor: pointer;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../images/glyphicons-halflings.png) no-repeat -384px -70px;
+}
+#main div.right div.calendar p a.next_month:hover{
+	background: url(../images/glyphicons-halflings2.png) no-repeat -384px -70px;
+}
+#main div.right div.calendar p a.date{
+	float:right;
+	font-style: normal;
+	padding-right: 10px;
+}
+#main div.right div.calendar table{
+	width:100%;
+	text-align: center;
+	border:0px;
+}
+#main div.right div.calendar table tr th{
+	background: #ccc;
+}
+#main div.right div.calendar table tr{
+	height:22px;
+}
+#main div.right div.member ul{
+	width:220px;
+	padding:10px;
+	padding-bottom: 0;
+	text-align:center;
+}
+#main div.right div.member ul li{
+	display:inline-block;
+	width:66px;
+	height:80px;
+	padding:10px 0;
+
+}
+#main div.right div.member ul li img{
+	width:52px;
+	height:52px;
+	padding:1px;
+	border:1px dashed #ccc;
+}
+#main div.right div.member ul li p{
+	text-align:center;
+	font-size:10px;
+	line-height:14px;
+}
+#main div.right div.member ul li p a{
+	font-size: 12px;
+	letter-spacing: 4px;
+}
+#main div.right div.later_news dl{
+	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.later_news dl dt{
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	width:60px;
+	color:#fff;
+	border:1px solid #fff;
+	border-radius: 8px;
+	font-size:18px;
+	display: block;
+	float:left;
+	opacity: 0.6;
+}
+#main div.right div.later_news dl dd{
+	margin-left: 10px;
+	display: block;
+	width:145px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	
+}
+#main div.right div.later_news dl dd i:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -336px -22px;
+}
+#main div.right div.later_news dl dd i:last-child{
+	float: right
+}
+#main div.right div.plun dl{
+	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.plun dl dt img{
+	height:40px;
+	width:40px;
+	display: block;
+	border:0;
+}
+#main div.right div.plun dl dt img:hover{
+	opacity: 0.6;
+}
+#main div.right div.plun dl dt{
+	height:40px;
+	width:40px;
+	border:1px solid #fff;
+	border-radius: 20px;
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+#main div.right div.plun dl dd{
+	margin-left: 10px;
+	display: block;
+	width:165px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	
+}
+#main div.right div.plun dl dd i:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -240px -116px;
+}
+#main div.right div.plun dl dd i:last-child{
+	float: right;
+}
+#main div.right div.plun dl dd a:first-child{
+	width:35px;
+	margin-right: 10px;
+	height:16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 2px;
+	opacity: 0.6;
+	display: inline-block;
+	vertical-align: middle;
+	background: brown;
+	color:#fff;
+}
+#main div.right div.links{
+	min-height: 170px;
+}
+#main div.right div.links ul{
+ 	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.links ul li{
+	display: inline-block;
+}
+#main div.right div.links ul li a{
+	width:auto;
+	height:auto;
+	display: inline-block;
+	padding:2px 6px;
+	border-radius:2px;
+	background: #ccc;
+	margin:5px;
+	color:#fff;
+}
+#main div.right div.links h2 em a{
+	color:#666;
+}

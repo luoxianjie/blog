@@ -1,0 +1,53 @@
+	<script src='__PUBLIC__/js/jquery.min.js'></script>
+	<script>
+	{$ipinfo}
+	$(function(){
+		$('#city').text(remote_ip_info.city);
+	});
+	</script>
+	
+	<div id="top">
+		<div class="left">
+			<span>&nbsp;</span>
+			<strong id='city' ></strong>
+			<i>{$equip}</i>
+		</div>
+		<div class='right'>
+			<span>在线{$online}</span>
+			<strong>&nbsp;</strong>
+			<if condition="$islogin eq true">
+			<a href='###'>{$user}</a>
+			<a href="{:U('user/logout')}">退出</a>
+			<else/>
+			<a href="{:U('user/login')}">登陆</a>
+			<a href="{:U('user/register')}">注册</a>
+			</if>
+		</div>
+	</div>
+	<div id='header'>
+		<div class='left'>
+			<h1>
+				只为等待下一个黎明
+			</h1>
+			<p>
+				只为等待下一个黎明!
+			</p>
+		</div>
+		<div class='right'>
+			<img src='__PUBLIC__/images/eye.gif'/>
+			<p>今日访客：<strong>{$data.today}</strong><br/>
+			总访问量：<strong>{$data.total}</strong></p>
+		</div>
+	</div>
+	<div id='nav'>
+		<ul class='nav'>
+			<li <if condition="$nav eq 'index'" > class='select' </if> ><a href="{:U('Home/Index/index')}">首页</a></li>
+			<li <if condition="$nav eq 'cate'" > class='select' </if> ><a href="{:U('Home/Category/index')}">分类</a></li>
+			<li <if condition="$nav eq 'talk'" > class='select' </if> ><a href="{:U('Home/Talk/index')}">动态</a></li>
+			<li><a href="{:U('Music/index')}" target='_blank'>音乐</a></li>
+			<li <if condition="$nav eq 'resource'" > class='select' </if> ><a href="{:U('Home/Resource/index')}">资源</a></li>
+			<li <if condition="$nav eq 'picbox'" > class='select' </if> ><a href="{:U('Home/PicBox/index')}">相册</a></li>
+			<li <if condition="$nav eq 'about'" > class='select' </if> ><a href="###">关于</a></li>
+			<li <if condition="$nav eq 'leave'" > class='select' </if> ><a href="{:U('Home/Words/leave')}">留言</a></li>
+		</ul>
+	</div>

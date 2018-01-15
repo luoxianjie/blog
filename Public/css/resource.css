@@ -1,0 +1,219 @@
+@charset=utf-8;
+#main{
+	width:1000px;
+	margin:8px auto;
+}
+#main .left{
+	width:750px;
+}
+#main .right{
+	width:240px;
+}
+#main div.right div.info img{
+	width:80px;
+	height:80px;
+	margin:10px;
+	margin-right: 0;
+	float:left;
+}
+#main div.right div.info ul{
+	float:left;
+	width:130px;
+	height:80px;
+	margin:10px 0;
+	padding-left:10px;
+	border:1px dashed #ccc;
+}
+#main div.right div.info ul li{
+	height:20px;
+	line-height:20px;
+}
+#main div.right div.info ul li strong{
+	font-style: normal;
+}
+#main div.right div.info p{
+	height:auto;
+	width:220px;
+	margin:0 auto;
+	line-height:20px;
+}
+#main div.right div.recommend ul{
+	width:220px;
+	padding:10px;
+	padding-bottom: 0;
+}
+#main div.right div.recommend ul li{
+	height:24px;
+}
+#main div.right div.recommend ul li em{
+	width:14px;
+	height:14px;
+	display:inline-block;
+	border-radius: 2px;
+	background: brown;
+	text-align: center;
+	color:#fff;
+	vertical-align: middle;
+	margin-right: 5px;
+
+}
+#main div.right div.recommend ul li a{
+	color:#666;
+}
+#main div.right div.recommend ul li a:hover{
+	text-decoration: underline;
+}
+#main div.right div.recommend ul li:nth-child(1) em{
+	background:red;
+}
+#main div.right div.recommend ul li:nth-child(2) em{
+	background: green;
+}
+#main div.right div.recommend ul li:nth-child(3) em{
+	background: orange;
+}
+#main div.right div.later_news dl{
+	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.later_news dl dt{
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	width:60px;
+	color:#fff;
+	border:1px solid #fff;
+	border-radius: 8px;
+	font-size:18px;
+	display: block;
+	float:left;
+	opacity: 0.6;
+}
+#main div.right div.later_news dl dd{
+	margin-left: 10px;
+	display: block;
+	width:145px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	
+}
+#main div.right div.later_news dl dd i:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -336px -22px;
+}
+#main div.right div.later_news dl dd i:last-child{
+	float: right
+}
+#main div.right div.plun dl{
+	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.plun dl dt img{
+	height:40px;
+	width:40px;
+	display: block;
+	border:0;
+}
+#main div.right div.plun dl dt img:hover{
+	opacity: 0.6;
+}
+#main div.right div.plun dl dt{
+	height:40px;
+	width:40px;
+	border:1px solid #fff;
+	border-radius: 20px;
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+#main div.right div.plun dl dd{
+	margin-left: 10px;
+	display: block;
+	width:165px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	
+}
+#main div.right div.plun dl dd i:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -240px -116px;
+}
+#main div.right div.plun dl dd i:last-child{
+	float: right;
+}
+#main div.right div.plun dl dd a:first-child{
+	width:35px;
+	margin-right: 10px;
+	height:16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 2px;
+	opacity: 0.6;
+	display: inline-block;
+	vertical-align: middle;
+	background: brown;
+	color:#fff;
+}
+#main div.right div.links{
+	min-height: 170px;
+}
+#main div.right div.links ul{
+ 	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.links ul li{
+	display: inline-block;
+}
+#main div.right div.links ul li a{
+	width:auto;
+	height:auto;
+	display: inline-block;
+	padding:2px 6px;
+	border-radius:2px;
+	background: #ccc;
+	margin:5px;
+	color:#fff;
+}
+#main div.right div.links h2 em a{
+	color:#666;
+}
+#main div.left div.resource{
+	width:750px;
+	padding-bottom: 10px;
+}
+#main div.left div.resource ul{
+	width:730px;
+	display:block;
+	font-size:0px;
+	background:none;
+	margin:10px auto;
+}
+#main div.left div.resource ul li{
+	display: inline-block;
+	text-align: left;
+	width:360px;
+	background: #fff;
+	margin:5px 0;
+	font-size:12px;
+	margin-right: 10px;
+	height:20px;
+	line-height: 20px;
+	text-indent: 10px;
+}
+#main div.left div.resource ul li:nth-child(2n){
+	margin-right: 0;
+}
+#main div.left div.resource ul li em{
+	float:right;
+	margin-right: 10px;
+	color:red;
+}

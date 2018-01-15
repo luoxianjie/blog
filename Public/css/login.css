@@ -1,0 +1,97 @@
+@charset=utf-8;
+#login{
+	width:280px;
+	padding:20px;
+	height:360px;
+	background:#fff;
+	box-shadow: 2px 2px 2px #ccc;
+	margin:100px auto;
+}
+
+#login .top{
+	padding:10px;
+	height:25px;
+	font-size:25px;
+	text-align:left;
+	color:#000;
+}
+#login .middle{
+	height:280px;
+	width:270px;
+	margin:0 auto;
+}
+#login .middle .forms{
+	width:270px;
+	padding-bottom: 0px;
+}
+#login .middle .tips{
+	width:250px;
+	margin:0px auto;
+	padding:15px 0;
+	border-top:1px dashed #ccc;
+}
+#login .middle .tips p:first-child{
+	font-size:18px;
+	margin-bottom: 10px;
+}
+#login .middle .tips p:nth-child(2){
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+    color: #000;
+    border-bottom: 1px dashed #ccc;
+}
+#login .middle .forms p{
+	height:20px;
+	padding:5px 0;
+	width:250px;
+	border:1px solid #ccc;
+	border-left: 2px green solid;
+	margin:20px auto;
+	position: relative;
+}
+#login .middle .forms p:first-child i{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	background:url(../images/glyphicons-halflings.png) no-repeat -164px -0px
+}
+#login .middle .forms p:nth-child(2) i{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	background:url(../images/glyphicons-halflings.png) no-repeat -284px -24px
+}
+#login .middle .forms p input.text{
+	width:210px;
+	margin-left: 5px;
+	font-size: 14px;
+	border:0;
+	color:#666;
+}
+#login .middle .forms p:last-child{
+	border:0;
+}
+#login .middle .forms p input.ck{
+	display: inline-block;
+	vertical-align: middle;
+}
+#login .middle .forms p input.btn{
+	width:60px;
+	height:30px;
+	border: 1px solid #ccc;
+	vertical-align: middle;
+	position: absolute;
+	right:-1px;
+	top:-1px;
+	cursor: pointer;
+}
+#login .middle .forms p input.btn:hover{
+	background: brown;
+	color:#fff;
+}
+#login .bottom{
+	height:20px;
+	width:250px;
+	margin:0 auto;
+	text-align: left;
+}

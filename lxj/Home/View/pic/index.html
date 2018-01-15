@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相册</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/basic.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/pic.css">
+	<link href="__PUBLIC__/images/logo.ico" rel="shortcut icon" />
+	<script src='__PUBLIC__/js/jquery.min.js'></script>
+	<script src='__PUBLIC__/js/basic.js'></script>
+</head>
+<body>
+	<include file='Public:header'/>
+    <div id="main">
+    	<div class='pic'>
+	    	<h2>夕阳无限好</h2>
+	    	<dl>
+	    		<dt><img src='__PUBLIC__/images/article/1.jpg'/></dt>
+	    	</dl>
+	    	<dl>
+	    		<dt><img src='__PUBLIC__/images/article/1.jpg'/></dt>
+	    	</dl>
+	    	<dl>
+	    		<dt><img src='__PUBLIC__/images/article/1.jpg'/></dt>
+	    	</dl>
+	    	<dl>
+	    		<dt><img src='__PUBLIC__/images/article/1.jpg'/></dt>
+	    	</dl>
+	    	<dl>
+	    		<dt><img src='__PUBLIC__/images/article/1.jpg'/></dt>
+	    	</dl>
+	    	<dl>
+	    		<dt><img src='__PUBLIC__/images/article/1.jpg'/></dt>
+	    	</dl>
+	    	<dl>
+	    		<dt><img src='__PUBLIC__/images/article/1.jpg'/></dt>
+	    	</dl>
+	    </div>
+    	<div class='clear'></div>
+    	<div class='comments'>
+				<h2>博友热评</h2>
+				<dl>
+					<dt><img src='__PUBLIC__/images/tourist1.jpg' /><i class='user'>&nbsp;</i>逆光<i class='time'>&nbsp;</i>2014-12-24<strong>Win7</strong></dt>
+					<dd>不要纠结，勇往直前，胜利就在眼前</dd>
+					<dt class='admin'><img src='__PUBLIC__/images/tourist3.jpg' /><i class='user'>&nbsp;</i>逆光<i class='time'>&nbsp;</i>2014-12-24<strong>Win7</strong></dt>
+					<dd>感谢支持！</dd>
+				</dl>
+				<dl>
+					<dt><img src='__PUBLIC__/images/tourist1.jpg' /><i class='user'>&nbsp;</i>逆光<i class='time'>&nbsp;</i>2014-12-24<strong>Win7</strong></dt>
+					<dd>不要纠结，勇往直前，胜利就在眼前</dd>
+				</dl>
+			</div>
+			<div class='forms'>
+				<h2><a href='javascript:formtoggle();' >我要评论/展开表单</a></h2>
+				<form method='post' action=''>
+					<dl id='callback'>
+						<dd><input type='text' placeholder="用户昵称" class='name' name='uname'/></dd>
+						<dd class='area'><textarea></textarea></dd>
+						<dd><input type='text' class='code' placeholder='验证码' name='code'/><img src='__PUBLIC__/images/code.png' onclick='this.src=this.src'/>
+						<input type='button' class='btn' name="send" value='发布' onclick='this.form.submit()'/></dd>
+					</dl>
+				</form>
+			</div>
+    </div>
+    <div class='clear'></div>
+	<include file='Public:footer'/>
+	
+</body>
+</html>

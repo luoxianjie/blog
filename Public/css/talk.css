@@ -1,0 +1,298 @@
+@charset=utf-8;
+#main{
+	width:1000px;
+	margin:8px auto;
+}
+#main .left{
+	width:750px;
+}
+#main .right{
+	width:240px;
+}
+#main div.right div.info img{
+	width:80px;
+	height:80px;
+	margin:10px;
+	margin-right: 0;
+	float:left;
+}
+#main div.right div.info ul{
+	float:left;
+	width:130px;
+	height:80px;
+	margin:10px 0;
+	padding-left:10px;
+	border:1px dashed #ccc;
+}
+#main div.right div.info ul li{
+	height:20px;
+	line-height:20px;
+}
+#main div.right div.info ul li strong{
+	font-style: normal;
+}
+#main div.right div.info p{
+	height:auto;
+	width:220px;
+	margin:0 auto;
+	line-height:20px;
+}
+#main div.right div.recommend ul{
+	width:220px;
+	padding:10px;
+	padding-bottom: 0;
+}
+#main div.right div.recommend ul li{
+	height:24px;
+}
+#main div.right div.recommend ul li em{
+	width:14px;
+	height:14px;
+	display:inline-block;
+	border-radius: 2px;
+	background: brown;
+	text-align: center;
+	color:#fff;
+	vertical-align: middle;
+	margin-right: 5px;
+
+}
+#main div.right div.recommend ul li a{
+	color:#666;
+}
+#main div.right div.recommend ul li a:hover{
+	text-decoration: underline;
+}
+#main div.right div.recommend ul li:nth-child(1) em{
+	background:red;
+}
+#main div.right div.recommend ul li:nth-child(2) em{
+	background: green;
+}
+#main div.right div.recommend ul li:nth-child(3) em{
+	background: orange;
+}
+#main div.right div.later_news dl{
+	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.later_news dl dt{
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	width:60px;
+	color:#fff;
+	border:1px solid #fff;
+	border-radius: 8px;
+	font-size:18px;
+	display: block;
+	float:left;
+	opacity: 0.6;
+}
+#main div.right div.later_news dl dd{
+	margin-left: 10px;
+	display: block;
+	width:145px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	
+}
+#main div.right div.later_news dl dd i:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -336px -22px;
+}
+#main div.right div.later_news dl dd i:last-child{
+	float: right
+}
+#main div.right div.plun dl{
+	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.plun dl dt img{
+	height:40px;
+	width:40px;
+	display: block;
+	border:0;
+}
+#main div.right div.plun dl dt img:hover{
+	opacity: 0.6;
+}
+#main div.right div.plun dl dt{
+	height:40px;
+	width:40px;
+	border:1px solid #fff;
+	border-radius: 20px;
+	display: block;
+	float:left;
+	overflow: hidden;
+}
+#main div.right div.plun dl dd{
+	margin-left: 10px;
+	display: block;
+	width:165px;
+	height:20px;
+	float:left;
+	line-height:20px;
+	
+}
+#main div.right div.plun dl dd i:first-child{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -240px -116px;
+}
+#main div.right div.plun dl dd i:last-child{
+	float: right;
+}
+#main div.right div.plun dl dd a:first-child{
+	width:35px;
+	margin-right: 10px;
+	height:16px;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 2px;
+	opacity: 0.6;
+	display: inline-block;
+	vertical-align: middle;
+	background: brown;
+	color:#fff;
+}
+#main div.right div.links{
+	min-height: 170px;
+}
+#main div.right div.links ul{
+ 	width:220px;
+ 	padding:10px;
+ 	padding-bottom: 0;
+}
+#main div.right div.links ul li{
+	display: inline-block;
+}
+#main div.right div.links ul li a{
+	width:auto;
+	height:auto;
+	display: inline-block;
+	padding:2px 6px;
+	border-radius:2px;
+	background: #ccc;
+	margin:5px;
+	color:#fff;
+}
+#main div.right div.links h2 em a{
+	color:#666;
+}
+#main div.left .page{
+	margin:10px 0 20px;
+	text-indent: 5px;
+	padding:5px 0;
+	height:20px;
+	line-height: 20px;
+}
+#main div.left .page a{
+	text-indent:0;
+	padding:0 2px;
+	display: inline-block;
+	background: #ccc;
+	margin:0 5px;
+}
+#main div.left .page div.left{
+	width:250px;
+}
+#main div.left .page div.right{
+	width:250px;
+	text-align:right;
+	margin-right: 10px;
+}
+#main div.left div.news{
+	padding-bottom: 0;
+}
+#main div.left div.news .news_top{
+	width:540px;
+	height:50px;
+	padding:10px 10px 0;	
+	float: left;
+}
+#main div.left div.news .news_top .left{
+	width:380px;
+}
+#main div.left div.news .news_top .left img{
+	display:block;
+	width:50px;
+	height:50px;
+	float:left;
+}
+#main div.left div.news .news_top .left p{
+	float:left;
+	margin-top:4px;
+	line-height:24px;
+	padding-left:10px;
+}
+#main div.left div.news .news_top .right{
+	text-align:right;
+	width:40px;
+}
+#main div.left div.news .news_top .right a{
+	width:30px;
+	height:16px;
+	display: block;
+	background: url(../images/glyphicons-halflings.png) no-repeat -88px -144px;
+	border:1px solid #ccc;
+	border-radius: 8px;
+	margin-top: 35px;
+	text-decoration: none;
+}
+#main div.left div.news .news_top .right a:hover{
+	background: url(../images/glyphicons-halflings2.png) no-repeat -88px -144px;
+}
+#main div.left div.news .news_content{
+	width: 540px;
+	padding:10px;
+	float: left;
+	line-height: 20px;
+}
+#main div.left div.news .img{
+	width:180px;
+	float:right;
+	height:120px;
+}
+#main div.left div.news .img img{
+	display:block;
+	height:100px;
+	width:160px;
+	padding:10px;
+	border:0px;
+}
+#main div.left div.news .zan{
+	height:20px;
+	width:730px;
+}
+#main div.left div.news .zan strong{
+	display: inline-block;
+	vertical-align: middle;
+	width:20px;
+	height:20px;
+	background:url(../images/glyphicons-halflings2.png)  no-repeat -92px -142px;
+}
+#main div.left div.news .zan i{
+	display: inline-block;
+	color:brown;
+	font-style: normal;
+}
+#main div.left div.news .zan a{
+	float:right;
+}
+#main div.left div.news .forms{
+	height: 20px;
+	width:730px;
+	padding:10px;
+	background:none;
+	border:1px solid #ccc;
+	border-left: none;
+	border-right: none;
+	margin-bottom: 0px;
+}

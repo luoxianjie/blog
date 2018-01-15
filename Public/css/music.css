@@ -1,0 +1,19 @@
+@charset=utf-8;
+div.music{
+	width:550px;
+	height:350px;
+	margin:150px auto 0;
+	text-align: center;
+	background: #cfcfcf;
+	box-shadow: 10px 10px 10px #333;
+}
+div.music div.top{
+	font-size: 24px;
+	height:24px;
+	padding:30px;
+}
+div.music div.bottom{
+	height:20px;
+	width:420px;
+	margin:20px auto 0;
+}

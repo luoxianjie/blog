@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+ </head>
+ <body id="main">
+ 	<div class="map">
+ 	  相册管理&gt;&gt;<strong>查看相册</strong>
+ 	</div>
+ 	<table  border="0" cellspacing="0" >
+ 		<tr><th>编号</th><th>相册名称</th><th>相册地址</th><th>相册描述</th><th>是否加密</th><th>操作</th></tr>
+		<assign name='i' value='1'>
+		<volist name='data' id='vo'>
+		<tr>
+ 			<td>{$i}</td>
+ 			<td>{$vo.name}</td>
+ 			<td>{$vo.url}</td>
+ 			<td>{$vo.desc|default="未填写"}</td>
+ 			<td><if condition="$vo.encrypt eq 1" >已加密<else/>未加密</if></td>
+ 			<td><a href="{:U('PicBox/editpicbox',array('id'=>$vo['id']))}">修改</a>|<a onclick="javascript:return confirm('确定删除？')" href="{:U('PicBox/deletepicbox',array('id'=>$vo['id']))}">删除</a></td>
+ 		</tr>
+ 		</volist>
+ 	</table>
+ 	<div class="page">{$page}</div>
+ </body>
+ </html>

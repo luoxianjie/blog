@@ -1,0 +1,186 @@
+@charset=utf-8;
+#main{
+	width:1000px;
+	margin:8px auto;
+}
+#main .pic h2{
+	box-shadow: 2px 2px 2px #ccc;
+}
+#main .pic dl{
+	display: block;
+	width:320px;
+	margin:20px 0 0;
+	margin-right: 20px;
+	background: #fff;
+	border:0;
+	float:left;
+	box-shadow: 2px 2px 2px #ccc;
+	cursor:pointer;
+	font-size: 0;
+}
+#main .pic dl:hover{
+	box-shadow:0px 4px 8px #666;
+}
+#main .pic dl:nth-child(3n+1){
+	margin-right: 0px;
+
+}
+#main .pic dl dt img{
+	width:320px;
+	height:210;
+	border:0;
+}
+#main .pic dl dd{
+	height:25px;
+	line-height:25px;
+	text-indent: 5px;
+}
+#main .pic dl dd em{
+	float:right;
+	margin-right: 5px;
+}
+#footer{
+	margin-top:20px;
+}
+#main .pic dl dd em i{
+	width:20px;
+	height:20px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/glyphicons-halflings2.png) no-repeat -240px -118px;
+}
+#main div.comments{
+	width:1000px;
+	margin-top: 10px;
+}
+#main div.comments dl{
+	width:1000px;
+	background: #fff;
+	margin:10px 0;
+}
+#main div.comments dl dt{
+	height:40px;
+	line-height: 40px;
+	padding:14px 20px 0;
+}
+#main div.comments dl dt.admin{
+	margin-left: 50px;
+	padding-top:7px;
+}
+#main div.comments dl dd:last-child{
+	border:0;
+}
+#main div.comments dl dt img{
+	height:40px;
+	width:40px;
+	border:0;
+	border-radius: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#main div.comments dl dt i{
+	margin-left: 10px;
+}
+#main div.comments dl dt strong{
+	margin-left:20px;
+}
+#main div.comments dl dt i.user{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	vertical-align: middle;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -168px 3px;
+}
+#main div.comments dl dt i.time{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	vertical-align: middle;
+	background:url(../images/glyphicons-halflings2.png) no-repeat -48px -22px;
+}
+#main div.comments dl dt strong{
+	display: inline-block;
+	padding:0 5px;
+	height:18px;
+	line-height: 18px;
+	border-radius: 5px;
+	background: brown;
+	text-align: center;
+	color: #fff;
+}
+#main div.comments dl dd{
+	height:48px;
+	margin:10px 70px;
+	line-height: 48px;
+	border-bottom: 1px dashed #ccc;
+}
+#main div.forms h2{
+	font-size: 14px;
+	font-weight: normal;
+}
+#main div.forms dl{
+	width:308px;
+	padding:20px;
+	border:1px solid #ccc;
+	margin:10px 0;
+	background: #fff;
+	color: #666;
+	display: none;
+}
+#main div.forms dl dd{
+	height:20px;
+	line-height: 20px;
+	padding:0;
+	margin-bottom: 10px;
+	position: relative;
+}
+#main div.forms dl dd.area{
+	height:100px;
+}
+#main div.forms dl dd input{
+	border:1px dashed #ccc;
+	background:none;
+	height:14px;
+	padding:3px;
+}
+#main div.forms dl dd input.name{
+	width:300px;
+}
+#main div.forms dl dd input.btn{
+	width:60px;
+	height:22px;
+	padding:0;
+	border:0;
+	background: #ccc;
+	color:#fff;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+}
+#main div.forms dl dd input.btn:hover{
+	background: brown;
+}
+#main div.forms dl dd textarea{
+	width:300px;
+	height:94px;
+	padding:3px;
+	border:1px dashed #ccc;
+	overflow:auto;
+	resize: none;
+}
+#main div.forms dl dd input.code{
+	width:80px;
+}
+#main div.forms dl dd img{
+	height:21px;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	top: 0px;
+	margin-left: 5px;
+}
+#main div.forms dl dd:last-child{
+	margin-bottom: 0;
+}

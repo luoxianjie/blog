@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>后台首页</title>
+  <link href="__ROOT__/public/images/logo.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/style/admin.css" />
+ </head>
+ <body id="main">
+ 	<div class="map">
+ 	  留言管理&gt;&gt;<strong>查看留言</strong>
+ 	</div>
+ 	<table  border="0" cellspacing="0" >
+ 		<tr><th>编号</th><th>用户昵称</th><th>时间</th><th>状态</th><th>评论/留言</th><th>操作</th></tr>
+		<assign name='i' value='1'>
+		<volist name='data' id='vo'>
+		<tr>
+ 			<td>{$i}</td>
+ 			<td>{$vo.name}</td>
+ 			<td>{$vo.time|date="Y-m-d H:i:s",###}</td>
+ 			<td><if condition="$vo.is_callback eq 0" >未回复<else/>已回复</if></td>
+ 			<td><if condition="$vo.is_comment eq 1" >评论<else/>留言</if></td>
+ 			<td><a href="{:U('showleave',array('id'=>$vo['id']))}">查看</a>|<a href="{:U('editleave',array('id'=>$vo['id']))}">修改</a>|<a onclick="javascript:return confirm('确定删除？')" href="{:U('deleteleave',array('id'=>$vo['id']))}">删除</a></td>
+ 		</tr>
+ 		</volist>
+ 	</table>
+ 	<div class="page">{$page}</div>
+ </body>
+ </html>

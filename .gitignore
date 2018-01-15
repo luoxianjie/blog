@@ -1,0 +1,7 @@
+# NextPCB
+
+/lxj/Runtime*
+.buildpath
+.settings/
+.project
+Uploads
